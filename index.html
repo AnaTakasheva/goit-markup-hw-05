@@ -373,7 +373,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="cont-soc-media">
                 <p class="social-media">Social media</p>
 
                 <ul class="list-network">
@@ -405,13 +405,19 @@
                 </ul>
             </div>
 
-            <form class="form-container">
-                <label>
-                    Subscribe
-                    <input class="form-input" type="text" name="email_address" placeholder="E-mail" />
-                </label>
-                <button class="button-input" type="submit">Subscribe</button>
-            </form>
+            <div class="form-container">
+                <p class="text-subscribe">Subscribe</p>
+                <form class="form">
+                    <label class="form-label">
+                        <input class="form-input" type="email" name="email_address" placeholder="E-mail" />
+                    </label>
+                    <button class="button-input" type="submit">Subscribe
+                        <svg width="24" height="24" class="icon-plane">
+                            <use href="./images/plane.svg#icon-plane"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </Footer>
 
