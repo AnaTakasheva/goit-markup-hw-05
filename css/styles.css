@@ -222,7 +222,8 @@ ul {
     padding: 120px 0;
 }
 
-.visually-hidden {
+.visually-hidden,
+.input-checkbox.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -675,6 +676,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.input-for-modal:focus + .icon-person, 
 .input-for-modal:focus {
     border-color: #4D5AE5;
     fill: #4D5AE5;
@@ -683,10 +685,12 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .icon-person {
     position: absolute;
     left: 16px;
-    left: 16px;
+    top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .last-one-div {
     margin-bottom: 16px;
@@ -735,10 +739,12 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
 }
 
-.input-checkbox:checked .icon-checkbox {
+.input-checkbox:checked + .label-checkbox > .part-label-checkbox {
     border: none;
     fill: #F4F4FD;
     background-color: #404BBF;
+    border-color: #404BBF;
+
 }
 
 .link-policy {
@@ -746,6 +752,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-last-one {
+    margin: auto;
     display: block;
     min-width: 169px;
     height: 56px;
